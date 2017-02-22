@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currencyconverter.FXMLDocumentController">
+   <children>
+      <ComboBox fx:id="box1" layoutX="126.0" layoutY="33.0" prefHeight="39.0" prefWidth="132.0" />
+      <ComboBox fx:id="box2" layoutX="126.0" layoutY="101.0" prefHeight="39.0" prefWidth="132.0" />
+      <TextField fx:id="num" layoutX="130.0" layoutY="173.0" prefHeight="39.0" prefWidth="125.0">
+         <effect>
+            <Blend />
+         </effect>
+      </TextField>
+      <Button layoutX="133.0" layoutY="316.0" mnemonicParsing="false" onAction="#getConversion" prefHeight="39.0" prefWidth="118.0" text="Convert" />
+      <Label fx:id="label" layoutX="69.0" layoutY="238.0" prefHeight="62.0" prefWidth="232.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="33.0" prefHeight="39.0" prefWidth="111.0" text="Currency From:" />
+      <Label layoutX="34.0" layoutY="101.0" prefHeight="39.0" prefWidth="111.0" text="Currency To:" />
+      <Label layoutX="34.0" layoutY="168.0" prefHeight="39.0" prefWidth="111.0" text="Enter the Value:" />
+      <TextField editable="false" layoutX="8.0" layoutY="380.0" prefHeight="29.0" prefWidth="355.0" text="Note: Double Click the &quot;Convert&quot; button if you get -ve Value" />
+   </children>
+</AnchorPane>
